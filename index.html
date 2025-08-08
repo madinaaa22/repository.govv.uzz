@@ -3,24 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Авторизация</title>
+  <title>Проверка PIN-кода</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Bosqich 1: Kod kiritish -->
-  <div class="container" id="codePage">
-    <h2>Введите код документа</h2>
-    <input type="text" id="docCode" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX" maxlength="47" />
-    <button onclick="verifyCode()">Продолжить</button>
-    <p id="codeMessage" class="message"></p>
-  </div>
-
-  <!-- Bosqich 2: PIN -->
-  <div class="container hidden" id="pinPage">
+  <div class="container">
     <div class="alert-box">
-      Пожалуйста, пройдите авторизацию чтобы система определила вас.
-      Если документ принадлежит вам, введения ПИН кода не требуется.
+      Пожалуйста, пройдите авторизацию чтобы система определила вас. 
+      Если документ принадлежит вам, введения ПИН кода не требуется. 
       <a href="#">Нажмите здесь для авторизации</a>
     </div>
 
@@ -32,6 +22,7 @@
     <button onclick="checkPIN()">Открыть</button>
     <p id="message" class="message"></p>
     <p class="note">PIN-код размещается рядом с QR-кодом документа</p>
+
     <img src="photo.jpg" alt="Документ" class="doc-image" />
   </div>
 
